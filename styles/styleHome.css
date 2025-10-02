@@ -1,0 +1,12 @@
+main > section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+
+    max-width: 45ch;
+}
+ 
+main > section > img {
+    border-left: groove var(--blue) 0.5em; 
+}
