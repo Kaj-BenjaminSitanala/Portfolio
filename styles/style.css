@@ -110,12 +110,14 @@ a:hover {
 
 main {
 	display: grid;
-	grid-template-columns: ;
+	grid-template-columns: repeat(auto-fit, minmax(min(30ch, 100%), 1fr));
 
 	padding: 1rem;
 	padding-top: 3rem;
 
 	gap: 1em;
+
+	background: url(../images/achtergrond.png);
 }
 
 header {
@@ -138,7 +140,17 @@ nav ul {
 	padding: 0;
 }
 
-nav li a {
-	text-decoration: none;
+main a {
+	background-color: var(--blue);
+	color: var(--color-white);
+	padding: 1em;
+	border-radius: 2em 0 2em 0 ;
+	width: max-content;
+
+	align-self: flex-end;
 }
 
+main a:hover {
+	background-color: var(--yellow);
+	color: var(--color-text);
+}

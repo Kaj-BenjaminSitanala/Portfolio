@@ -1,0 +1,39 @@
+
+main > section > img {
+    width: 100%; 
+    align-self: center;
+}
+
+
+@media screen and (min-width: 768px) {
+
+main {
+    grid-template-columns: 1fr 70ch 1fr;
+    margin: 0;
+}
+
+main > section:first-of-type {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main > section:nth-of-type(2) {
+    order: 1;
+    writing-mode: sideways-lr;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+main > section:nth-of-type(3) {
+    order: 3;
+    writing-mode: sideways-rl;
+        display: flex;
+    flex-direction: column;
+        justify-content: flex-end;
+    align-items: flex-start;
+}
+}
