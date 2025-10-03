@@ -1,0 +1,14 @@
+main > section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    height: 100%;
+}
+ 
+main > section > img {
+    border-left: groove var(--blue) 0.5em;
+    object-fit: cover;
+    width: 100%;
+    height: 45ch;
+}
