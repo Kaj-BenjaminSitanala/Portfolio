@@ -154,6 +154,7 @@ main a {
 main a:hover {
 	background-color: var(--yellow);
 	color: var(--color-text);
+	
 }
 
 p:has(.helpText) {
