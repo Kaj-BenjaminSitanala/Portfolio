@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8em;
+}
+
+section a {
+    padding: 0.8em;
+}
+
+main section form{
+    display: grid;
+    gap: 1em;
+
+    color: var(--blue);
+    font-family: inter;
+}
+
+main section form input{
+    width: 100%;
+    color: var(--blue);
+    font-family: inter;
+    padding: 0.5em;
+
+    border: solid var(--blue);
+}
+
+textarea {
+    width: 100%;
+    font-family: inter;
+    border: solid var(--blue);
+    padding: 0.5em;
+
+    height: 20vh;
+}
+
+textarea:focus, input:focus {
+    border: solid var(--blue) 0.2em;
+    outline-color: var(--blue);
+}

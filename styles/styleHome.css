@@ -1,4 +1,4 @@
-main > section {
+main section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -6,7 +6,7 @@ main > section {
     height: 100%;
 }
  
-main > section > img {
+main section img {
     border-left: groove var(--blue) 0.5em;
     object-fit: cover;
     width: 100%;
