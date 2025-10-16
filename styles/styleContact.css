@@ -1,45 +1,57 @@
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 8em;
+    gap: .3em;
 }
 
-section p {
-    padding-bottom: 1.5em;
+main > section:first-of-type {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: max-content;
+}
+
+main > section:first-of-type h2 {
+    font-size: 3em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    column-gap: 4em;
+    row-gap: 0em;
+    padding: 1em;
+    border-top: solid var(--blue);
+    border-bottom: solid var(--blue);
+    width: 100%;
+    justify-content: center;
+}
+
+section h2 {
+    font-size: large;
+    grid-column-start: 2;
+    align-self: flex-end;
 }
 
 section a {
-    padding: 0.8em;
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
-main section form{
-    display: grid;
-    gap: 1em;
+section img {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: -1;
 
-    color: var(--blue);
-    font-family: inter;
-}
-
-main section form input{
-    width: 100%;
-    color: var(--blue);
-    font-family: inter;
-    padding: 0.5em;
-
-    border: solid var(--blue);
-}
-
-textarea {
-    width: 100%;
-    font-family: inter;
-    border: solid var(--blue);
-    padding: 0.5em;
-
-    height: 20vh;
-}
-
-textarea:focus, input:focus {
+    object-fit: cover;
+    width: 7em;
+    height: 7em;
+    border-radius: 200em;
+    padding: 0.3em;
     border: solid var(--blue) 0.2em;
-    outline-color: var(--blue);
 }
