@@ -147,16 +147,16 @@ main a {
 	background-color: var(--blue);
 	color: var(--color-white);
 	padding: 1em;
-	border-radius: 2em 0 2em 0 ;
 	width: max-content;
+	align-self: center;
+	margin: 1em;
 
-	align-self: flex-end;
+	border-radius: 20em;
 }
 
 main a:hover {
 	background-color: var(--yellow);
 	color: var(--color-text);
-	
 }
 
 p:has(.helpText) {

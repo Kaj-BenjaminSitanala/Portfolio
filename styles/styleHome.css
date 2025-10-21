@@ -3,20 +3,34 @@ main section {
     flex-direction: column;
     width: 100%;
 
-}
-
-main section a {
-    margin-bottom: 0;
-    border-radius: 2em 0em 0 0;
-    margin-top: 1em;
+    overflow-x: hidden;
 }
  
 main section img {
-    border-left: groove var(--blue) 0.5em;
-    border-top: solid var(--blue) 0.5em;
+    width: 20em;
+    height: 20em;
     object-fit: cover;
-    width: 100%;
-    height: 45ch;
+    border-radius: 20em;
+
+    position: relative;
+}
+
+section:first-of-type img {
+    left: -4rem;
+}
+
+section:nth-of-type(2) img {
+    right: -10rem;
+}
+
+@media screen and (min-width: 40em){
+    section:first-of-type img {
+    left: 0em;
+}
+
+section:nth-of-type(2) img {
+    right: 0em;
+}
 }
 
 main section p {
