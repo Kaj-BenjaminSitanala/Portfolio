@@ -1,0 +1,90 @@
+main {
+    padding: 0;
+    background-image: none;
+    color: white;
+}
+
+img {
+    height: 40vh;
+    width: 100vw;
+    object-fit: cover;
+    align-self: center;
+
+    order: -1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-bottom: 2em;
+}
+
+section:nth-of-type(even) {
+    background-color: white;
+    color: var(--color-textBlue);
+}
+
+section:nth-of-type(even) p, section:nth-of-type(even) h2 {
+    color: var(--color-textBlue);
+}
+
+main section p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main section h2 {
+    padding-left: .5em;
+}
+
+@media screen and (min-width: 768px){
+    section {
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-rows: max-content max-content;
+    display: grid;
+    padding: 2em;
+    }
+
+    section:nth-of-type(odd) {
+    grid-template-columns: 60% 40%;
+   
+    }
+
+    section:nth-of-type(even) {
+    grid-template-columns: 40% 60%;
+    }
+
+    section:nth-of-type(even) p {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        align-self: flex-end;
+    }
+
+    section:nth-of-type(even) h2 {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    section:nth-of-type(odd) p {
+        grid-column-start: 1;
+        grid-row-start: 2;
+
+        align-self: flex-end;
+    }
+
+    section:nth-of-type(odd) h2 {
+        grid-row-start: 1;
+    }
+
+    img {
+        height: 100%;
+        grid-row: span 2;
+    }
+}
+
+strong {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
