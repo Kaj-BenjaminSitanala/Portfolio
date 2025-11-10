@@ -43,6 +43,7 @@
 
 :root {
 	--color-text:white;
+	--indexWhite: rgb(253, 253, 253);
 	--color-textWhite: #ffffff;
 	--color-textBlue: #3e40c1;
 	--color-headings: white;
@@ -57,6 +58,9 @@
 	--yellow: #ffc21c;
 	
 	--color: transparent;
+
+	--heroTitle: rgb(255, 255, 255);
+	--heroBackground: #0000004c;
 }
 
 
@@ -178,7 +182,7 @@ main {
 	background-blend-mode: lighten;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 2em;
+	
 }
 
 header {

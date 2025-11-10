@@ -2,6 +2,11 @@
 main article {
     display: grid;
     gap: 1em;
+    background-color: var(--indexWhite);
+}
+
+article {
+    padding: 2rem;
 }
 
 section {
@@ -26,6 +31,10 @@ article h2 {
     display: none;
 }
 
+h2, p, h3 {
+    color: var(--blue);
+}
+
 
 @media screen and (min-width: 1024px) {
     main {
@@ -47,4 +56,43 @@ article h2 {
     main article section:nth-of-type(2) img {
         border-radius: 0 10em 0 0;
     }
+}
+
+.heroSection {
+  display: grid;
+  place-items: center;          /* centers everything */
+  text-align: center;
+  position: relative;
+  min-height: 40vh;
+
+  background-image: url(../images/ceram.jpg);
+  background-color: var(--heroBackground);
+  background-blend-mode: darken;
+  padding: 1rem;
+}
+
+.heroSection img{
+  grid-area: 1 / 1;             /* stack everything in the same grid cell */
+  width: 300px;
+  z-index: 1;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.41));
+}
+
+.heroSection h2 {
+  grid-area: 1 / 1;
+  z-index: 2;
+  font-size: 2.2rem;
+  letter-spacing: 7px;
+  margin-top: 8em;            /* moves it slightly downward to overlap image bottom */
+  padding: 0.2em 0.5em;
+  color: var(--heroTitle);
+}
+
+.heroSection p {
+  grid-area: 2 / 1;             /* place below the overlapping area */
+  font-size: 1rem;
+  margin-top: -1rem;
+  letter-spacing: 3px;
+  color: var(--heroTitle);
+  padding-bottom: 1rem;
 }
