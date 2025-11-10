@@ -90,6 +90,31 @@ a:active {
 }
 
 /* BODY ETC. */
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* when keyboard-focused, make it visible */
+.skip-link:focus,
+.skip-link:active {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: .5rem .75rem;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 9999;
+}
 
 .visually-hidden {
   clip: rect(0 0 0 0);
