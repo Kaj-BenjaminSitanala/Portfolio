@@ -22,6 +22,10 @@ main article section img {
     align-self: center;
 }
 
+article h2 {
+    display: none;
+}
+
 
 @media screen and (min-width: 1024px) {
     main {
