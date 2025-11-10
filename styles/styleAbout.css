@@ -30,14 +30,16 @@ section {
 @media screen and (min-width: 768px){
     section:nth-of-type(even) {
         display: grid;
-        grid-template-columns: 35% 60%;
+        grid-template-columns: 40% 60%;
         padding: 2em;
+        column-gap: 0;
     }
 
     section:nth-of-type(odd) {
         display: grid;
-        grid-template-columns: 60% 35%;
+        grid-template-columns: 60% 40%;
         padding: 2em;
+        column-gap: 0;
     }
 
     #designsThat {
