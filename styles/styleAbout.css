@@ -30,13 +30,13 @@ section {
 @media screen and (min-width: 768px){
     section:nth-of-type(even) {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 35% 60%;
         padding: 2em;
     }
 
     section:nth-of-type(odd) {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 60% 35%;
         padding: 2em;
     }
 
@@ -57,6 +57,7 @@ section {
 
     img {
         height: 100%;
+        width: 100%;
     }
 }
 
