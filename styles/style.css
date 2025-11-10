@@ -40,15 +40,6 @@
 
 
 /* CUSTOM PROPERTIES */
-span.filter {
-	filter: url("#turb");
-	width: 100%;
-	padding: .5em;
-}
-
-.filter {
-	filter: url("#turb");
-}
 
 :root {
 	--color-text:white;
@@ -84,6 +75,18 @@ text-decoration: none;
 ::selection {
 	background-color: var(--blue);
 	color: var(--yellow);
+}
+
+*:focus{
+	outline: var(--yellow);
+	outline-style:dashed;
+	outline-width: .2rem;
+	outline-offset: .5rem;
+}
+
+a:active {
+	background-color: var(--yellow);
+	border-radius: .2em;
 }
 
 /* BODY ETC. */
