@@ -50,12 +50,8 @@ h2, p, h3 {
     main article section img {
         order: -1;
         height: 13rem;
-        border-radius: 0 0 0 10em;
     }
 
-    main article section:nth-of-type(2) img {
-        border-radius: 0 10em 0 0;
-    }
 }
 
 .heroSection {
@@ -66,6 +62,8 @@ h2, p, h3 {
   min-height: 40vh;
 
   background-image: url(../images/ceram.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--heroBackground);
   background-blend-mode: darken;
   padding: 1rem;
