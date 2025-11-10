@@ -59,7 +59,7 @@ main section h2 {
     section:nth-of-type(even) p {
         grid-column-start: 2;
         grid-row-start: 2;
-        align-self: flex-end;
+        
     }
 
     section:nth-of-type(even) h2 {
@@ -71,7 +71,6 @@ main section h2 {
         grid-column-start: 1;
         grid-row-start: 2;
 
-        align-self: flex-end;
     }
 
     section:nth-of-type(odd) h2 {
