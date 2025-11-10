@@ -271,43 +271,41 @@ footer {
 	align-items: center;
 }
 
-footer ul:first-of-type {
+footer ul {
 	display: flex;
 	gap: 3em;
 	list-style: none;
 }
 
-footer ul:first-of-type li a {
+footer ul li a {
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	color: var(--blue);
 	font-weight: bold;
 }
 
-footer ul:first-of-type li a:hover {
+footer ul li a:hover {
 	color: var(--yellow);
 } 
 
-footer ul:nth-of-type(2) {
+footer a {
 	margin-left: auto;
 }
 
-footer svg {
+footer a svg {
 	width: 4em;
 	fill: var(--blue);
 }
 
-footer svg:hover {
+footer a svg:hover {
 	fill: var(--yellow);
 }
 
-footer ul:nth-of-type(2) a:nth-of-type(2) svg {
+footer a svg {
 	padding: 0.3em;
 }
 
-footer ul:nth-of-type(2) a:nth-of-type(1) {
-	display: none;
-}
+
 
 
 
