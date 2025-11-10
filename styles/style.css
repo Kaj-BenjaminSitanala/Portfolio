@@ -107,7 +107,7 @@ body, html {
 }
 /* algemeen */
 
-h1, h2 {
+h1, h2, h3 {
     color: var(--color-whiteheadings);
     font-size: 2.5em;
 

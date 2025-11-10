@@ -4,6 +4,11 @@ main {
     color: white;
 }
 
+h2 {
+    padding: 2rem;
+    display: none;
+}
+
 img {
     height: 40vh;
     width: 100vw;
@@ -25,7 +30,7 @@ section:nth-of-type(even) {
     color: var(--color-textBlue);
 }
 
-section:nth-of-type(even) p, section:nth-of-type(even) h2 {
+section:nth-of-type(even) p, section:nth-of-type(even) h3 {
     color: var(--color-textBlue);
 }
 
@@ -34,7 +39,7 @@ main section p {
     padding-right: 2em;
 }
 
-main section h2 {
+main section h3 {
     padding-left: .5em;
 }
 
@@ -62,7 +67,7 @@ main section h2 {
         
     }
 
-    section:nth-of-type(even) h2 {
+    section:nth-of-type(even) h3 {
         grid-row-start: 1;
         grid-column-start: 2;
     }
@@ -73,7 +78,7 @@ main section h2 {
 
     }
 
-    section:nth-of-type(odd) h2 {
+    section:nth-of-type(odd) h3 {
         grid-row-start: 1;
     }
 
