@@ -27,6 +27,10 @@ section {
     padding-bottom: 2em;
 }
 
+section:nth-of-type(odd) {
+    background-color: var(--blue);
+}
+
 @media screen and (min-width: 768px){
     section:nth-of-type(even) {
         display: grid;
@@ -80,6 +84,7 @@ main > section:first-of-type {
     height: 10rem;
     align-items: center;
     gap: .1em;
+    padding: 1rem;
 }
 
 main svg {

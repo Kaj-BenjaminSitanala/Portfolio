@@ -180,11 +180,9 @@ em {
 
 /* Header - nav */
 main {
-	background-color: var(--color-background);
 	background-blend-mode: lighten;
 	background-position: center;
 	background-attachment: fixed;
-	
 }
 
 header {

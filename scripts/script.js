@@ -10,7 +10,7 @@ const hamburgerIcon = document.querySelector("header button");
 document.addEventListener("DOMContentLoaded", () => {
   const svgContainer = document.getElementById("matter");
 
-  // Array of SVG strings (add your 5 here)
+  // Array of SVG strings
   const svgs = [
     `
 <svg id="matter" class="left"  xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1827.22 505.93">

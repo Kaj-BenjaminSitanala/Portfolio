@@ -2,7 +2,7 @@ main article {
     display: grid;
     gap: 1em;
     padding: 2rem;
-    background-color: var();
+    background-color: var(--blue);
 }
 
 section {
