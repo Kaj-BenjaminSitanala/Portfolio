@@ -24,6 +24,10 @@ main article section img {
     align-self: center;
 }
 
+p {
+    color: var(--color-textWhite);
+}
+
 article h2 {
     display: none;
 }

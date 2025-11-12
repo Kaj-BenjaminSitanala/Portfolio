@@ -59,7 +59,8 @@
 	
 	--color: transparent;
 
-	--heroTitle: rgb(255, 255, 255);
+	--black-text: rgb(25, 25, 25);
+	--heroTitle: rgb(25, 25, 25);
 	--heroBackground: #0000004c;
 }
 
@@ -149,6 +150,7 @@ h1, h2, h3 {
 p {
 	line-height: 1.6em;
     font-size: 20px;
+	color: var(--black-text);
 }
 
 strong {
@@ -291,10 +293,6 @@ nav.open {
 		flex-direction: row;
 		gap: 1.5em;
 	}
-}
-
-p{
-	color: var(--color-text);
 }
 
 h2 {

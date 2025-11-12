@@ -65,11 +65,10 @@ section {
 
 section:nth-of-type(even) {
     background-color: white;
-    color: var(--color-textBlue);
 }
 
-section:nth-of-type(even) p, section:nth-of-type(even) h2 {
-    color: var(--color-textBlue);
+section:nth-of-type(odd) p {
+    color: var(--color-textWhite);
 }
 
 main section p {

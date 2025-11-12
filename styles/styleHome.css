@@ -31,9 +31,10 @@ article h2 {
     display: none;
 }
 
-h2, p, h3 {
+h2, h3 {
     color: var(--blue);
 }
+
 
 
 @media screen and (min-width: 1024px) {
@@ -61,11 +62,11 @@ h2, p, h3 {
   position: relative;
   min-height: 40vh;
 
-  background-image: url(../images/ceram.jpg);
+  
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--heroBackground);
-  background-blend-mode: darken;
+  background-color: var(--indexWhite);
+  background-blend-mode: lighten;
   padding: 1rem;
 }
 
@@ -91,6 +92,6 @@ h2, p, h3 {
   font-size: 1rem;
   margin-top: -1rem;
   letter-spacing: 3px;
-  color: var(--heroTitle);
   padding-bottom: 1rem;
+  color: var(--black-text);
 }
